@@ -11,19 +11,18 @@ import { NavLink, Link as RouterLink } from "react-router-dom";
 import { useTheme } from "next-themes";
 import {
   LuArrowUpRight,
-  LuMonitor,
   LuMoon,
   LuPlus,
   LuSun,
 } from "react-icons/lu";
 
 function ThemeButton() {
-  const { theme = "system", setTheme } = useTheme();
-  const modes = ["system", "light", "dark"];
-  const labels = { system: "Device", light: "Light", dark: "Dark" };
-  const Icon =
-    theme === "dark" ? LuMoon : theme === "light" ? LuSun : LuMonitor;
-  const next = modes[(modes.indexOf(theme) + 1) % modes.length];
+  const { theme, setTheme } = useTheme();
+  const isDark = theme === "dark";
+  const label = isDark ? "Dark" : "Light";
+  const next = isDark ? "light" : "dark";
+  const nextLabel = isDark ? "Light" : "Dark";
+  const Icon = isDark ? LuMoon : LuSun;
   return (
     <Button
       variant="ghost"
@@ -32,10 +31,10 @@ function ThemeButton() {
       borderRadius="full"
       color="fg.muted"
       onClick={() => setTheme(next)}
-      aria-label={`Theme: ${labels[theme] || "Device"}. Switch to ${labels[next]} mode`}
+      aria-label={`Theme: ${label}. Switch to ${nextLabel} mode`}
     >
       <Icon aria-hidden="true" />
-      {labels[theme] || "Device"}
+      {label}
     </Button>
   );
 }

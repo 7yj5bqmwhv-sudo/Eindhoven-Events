@@ -15,7 +15,7 @@ The interface applies Apple design principles through the existing Chakra UI sys
 - A real featured event introduces the season. Photo captions identify the source and, where applicable, previous-edition imagery.
 - Cards use date tiles, full descriptions, category names and explicit start/end times. Poster detail pages preserve the complete artwork.
 - Card media uses a full-width 16:9 frame with an explicitly positioned image, so intrinsic photo dimensions cannot shrink its flex container. Loading placeholders use the same ratio. All card thumbnails fill the frame with cover sizing; posters use contain sizing on their detail pages.
-- Both `_light` and `_dark` semantic values are explicit because Chakra merges the custom theme with its defaults. Device mode follows the same resolved light/dark palettes.
+- Both `_light` and `_dark` semantic values are explicit because Chakra merges the custom theme with its defaults. Appearance defaults to Light, with a saved Light/Dark choice independent of operating-system settings.
 - Search and category filters sit beside the results they affect. Filters remain accessible checkboxes and combine with name search.
 - Navigation wraps on narrow displays; cards use one, two or three columns. Dialogs scroll within the viewport.
 - Press feedback is subtle and immediate. Reduced-motion preferences suppress transforms and shorten transitions. No decorative looping animation is used.

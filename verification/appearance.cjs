@@ -5,8 +5,8 @@ const { createRoot } = require('react-dom/client');
 const { MemoryRouter } = require('react-router-dom');
 const test = assertions();
 
-// A changing OS preference must affect Device mode without overriding a manual choice.
-let systemDark = false;
+// Appearance is an explicit choice, independent of the operating system.
+let systemDark = true;
 const mediaQueries = new Map();
 window.matchMedia = media => {
   if (!mediaQueries.has(media)) {
@@ -59,6 +59,24 @@ const palette = selector => {
     .map(name => [name, values[`--chakra-colors-${name}`]]));
 };
 let root;
+const mount = async () => {
+  root = createRoot(document.getElementById('root'));
+  await React.act(async () => root.render(React.createElement(Provider, null,
+    React.createElement(MemoryRouter, null,
+      React.createElement(Navigation, { canAdd: false, onAdd() {} }),
+    ),
+  )));
+  await tick();
+};
+const unmount = async () => {
+  await React.act(async () => root.unmount());
+  root = null;
+  await tick();
+};
+const remount = async () => {
+  await unmount();
+  await mount();
+};
 
 (async () => {
   // Checking actual emitted conditional CSS catches defaultConfig's retained _light values.
@@ -71,40 +89,49 @@ let root;
     'teal-solid': '#a9c95b', 'teal-fg': '#c0da84', 'teal-subtle': '#303e27',
   }, 'Dark conditional CSS retains the matching dark palette');
 
-  root = createRoot(document.getElementById('root'));
-  await React.act(async () => root.render(React.createElement(Provider, null,
-    React.createElement(MemoryRouter, null,
-      React.createElement(Navigation, { canAdd: false, onAdd() {} }),
-    ),
-  )));
-  await tick();
-  test.equal(state(), { label: 'Theme: Device. Switch to Light mode', light: true, dark: false, saved: null },
-    'Device initially follows a light OS preference without storing an explicit choice');
-  await changeSystem(true);
-  test.equal(state(), { label: 'Theme: Device. Switch to Light mode', light: false, dark: true, saved: null },
-    'Device responds to an OS change to dark');
-  await switchTheme();
-  test.equal(state(), { label: 'Theme: Light. Switch to Dark mode', light: true, dark: false, saved: 'light' },
-    'Choosing Light overrides a dark OS preference and persists the choice');
+  await mount();
+  test.equal(state(), { label: 'Theme: Light. Switch to Dark mode', light: true, dark: false, saved: null },
+    'First load defaults to Light even when the OS prefers dark');
   await changeSystem(false);
-  await changeSystem(true);
-  test.equal(state(), { label: 'Theme: Light. Switch to Dark mode', light: true, dark: false, saved: 'light' },
-    'An explicit Light choice survives subsequent OS preference changes');
+  test.equal(state(), { label: 'Theme: Light. Switch to Dark mode', light: true, dark: false, saved: null },
+    'The default Light appearance ignores OS changes');
   await switchTheme();
-  test.equal(state(), { label: 'Theme: Dark. Switch to Device mode', light: false, dark: true, saved: 'dark' },
+  test.equal(state(), { label: 'Theme: Dark. Switch to Light mode', light: false, dark: true, saved: 'dark' },
     'Choosing Dark applies and persists the dark theme');
-  await changeSystem(false);
-  test.equal(state(), { label: 'Theme: Dark. Switch to Device mode', light: false, dark: true, saved: 'dark' },
-    'An explicit Dark choice survives an OS change to light');
-  await switchTheme();
-  test.equal(state(), { label: 'Theme: Device. Switch to Light mode', light: true, dark: false, saved: 'system' },
-    'Returning to Device resolves the current light OS preference');
   await changeSystem(true);
-  test.equal(state(), { label: 'Theme: Device. Switch to Light mode', light: false, dark: true, saved: 'system' },
-    'Returning to Device restores live OS preference tracking');
-  await React.act(async () => root.unmount());
-  root = null;
-  await tick();
+  await changeSystem(false);
+  test.equal(state(), { label: 'Theme: Dark. Switch to Light mode', light: false, dark: true, saved: 'dark' },
+    'An explicit Dark choice ignores subsequent OS changes');
+  await remount();
+  test.equal(state(), { label: 'Theme: Dark. Switch to Light mode', light: false, dark: true, saved: 'dark' },
+    'A saved Dark choice survives a fresh mount');
+  await switchTheme();
+  test.equal(state(), { label: 'Theme: Light. Switch to Dark mode', light: true, dark: false, saved: 'light' },
+    'The second choice returns directly to Light and persists it');
+  await changeSystem(true);
+  test.equal(state(), { label: 'Theme: Light. Switch to Dark mode', light: true, dark: false, saved: 'light' },
+    'An explicit Light choice ignores an OS change to dark');
+  await remount();
+  test.equal(state(), { label: 'Theme: Light. Switch to Dark mode', light: true, dark: false, saved: 'light' },
+    'A saved Light choice survives a fresh mount');
+
+  await unmount();
+  localStorage.setItem('eindhoven-theme', 'system');
+  await mount();
+  test.equal(state(), { label: 'Theme: Light. Switch to Dark mode', light: true, dark: false, saved: 'light' },
+    'A retired appearance preference migrates to Light before mounting');
+  test.equal(document.documentElement.className, 'light',
+    'A retired appearance preference leaves no unsupported root class');
+  await changeSystem(false);
+  await changeSystem(true);
+  test.equal(state(), { label: 'Theme: Light. Switch to Dark mode', light: true, dark: false, saved: 'light' },
+    'The migrated preference ignores subsequent OS changes');
+  await unmount();
+  localStorage.setItem('eindhoven-theme', 'unsupported');
+  await mount();
+  test.equal(state(), { label: 'Theme: Light. Switch to Dark mode', light: true, dark: false, saved: 'light' },
+    'An unsupported saved appearance safely falls back to Light');
+  await unmount();
   test.equal(environment.consoleIssues, [], 'Theme transitions produce no React or Router console warnings');
   test.equal(environment.domIssues, [], 'Theme transitions produce no unexpected DOM errors');
   console.log(`PASS appearance: ${test.count} emitted-palette and real theme-control assertions. CSS @layer parsing limitations: ${environment.cssLimitations}.`);

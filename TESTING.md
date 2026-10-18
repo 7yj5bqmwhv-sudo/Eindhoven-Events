@@ -6,7 +6,7 @@ The automated checks run against the project's own installed dependencies. API i
 
 ## Verified
 
-867 assertions passed: 65 Context checks, 140 form checks, 143 page/interaction checks, 358 source/content/edit-metadata checks, 12 appearance checks, 15 image checks, 76 upload checks, 34 API checks, and 24 profiling checks.
+867 assertions passed: 65 Context checks, 140 form checks, 139 page/interaction checks, 358 source/content/edit-metadata checks, 16 appearance checks, 15 image checks, 76 upload checks, 34 API checks, and 24 profiling checks.
 
 - `npm ci`: dependency lock installs successfully.
 - `npm run lint`: no source errors or warnings.
@@ -31,7 +31,7 @@ The computer-picture option has focused checks for required selection, previews,
 
 The later white/gray/green palette update was checked numerically for contrast and rechecked with the existing component suite, lint and production builds. Primary white button labels measure 5.76:1 normally and 4.65:1 on the hover blend over white. These calculations do not replace visual checks of the final rendered interface.
 
-A screenshot then exposed inherited Chakra light-mode values overriding the custom base tokens. The focused appearance regression failed against the original emitted light CSS; explicit `_light` values fix it. The 12 checks now cover emitted palettes, manual Light/Dark choices, persistence, and Device mode tracking simulated OS changes. The image regression checks full-width 16:9 card frames, positioned images, cover/contain treatments, loading placeholders, and broken/replaced-image recovery. All component groups passed after these fixes. These are CSS/DOM checks; the reported Safari/Chrome difference still needs a real-browser visual confirmation.
+A screenshot then exposed inherited Chakra light-mode values overriding the custom base tokens. The focused appearance regression failed against the original emitted light CSS; explicit `_light` values fix it. The focused checks cover emitted palettes, the Light/Dark toggle, saved preferences after remounting, migration of older preferences to Light, and independence from simulated operating-system appearance changes. The image regression checks full-width 16:9 card frames, positioned images, cover/contain treatments, loading placeholders, and broken/replaced-image recovery. All component groups passed after these fixes. These are CSS/DOM checks; the reported Safari/Chrome difference still needs a real-browser visual confirmation.
 
 ## Still requires a real browser
 
@@ -40,7 +40,7 @@ The supported browser preview was unavailable in the build environment. jsdom do
 1. Run the app and backend using the README instructions.
 2. Inspect the list, details, About page, and both dialogs at 320, 375, 768, 1024, and 1440px widths. Check for horizontal scrolling and clipped date inputs.
 3. Use Tab, Shift+Tab, Enter, Space, and Escape. Confirm visible focus, dialog focus containment, and focus returning to the initiating button after closing.
-4. Test Device, Light, and Dark modes visually, including labels, errors, toasts, and OS-theme changes in Device mode.
+4. Test Light and Dark modes visually, including labels, errors, toasts, and persistence after a refresh. Confirm operating-system appearance changes do not override the selected mode.
 5. Inspect the browser console and network panel during a complete create/edit/delete cycle and a page refresh. Confirm no runtime warnings or failed local assets.
 6. Stop the backend while editing. Confirm the save fails visibly and preserves the draft. Restart the backend and retry.
 7. Open a detail URL directly, refresh it, and try browser Back and Forward. Confirm that event data persists and search state is retained when returning from a card.

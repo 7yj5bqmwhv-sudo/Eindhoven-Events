@@ -52,7 +52,7 @@ Keep `npm run api` running while using the preview. Hosting the built frontend b
 - Add a picture using an image URL or **Upload from computer**. JPG, PNG and WebP files up to 10 MB are accepted; a preview appears before saving. Existing uploaded pictures can be kept when editing.
 - Delete an event after an explicit confirmation.
 - See loading skeletons, clear empty states, request errors, and success/failure notifications.
-- Use Device, Light, or Dark appearance. Device mode follows the operating system.
+- Choose Light or Dark appearance. Light is the default; your choice is saved.
 
 Dates are entered and displayed in the device's local time zone and sent to the API as ISO timestamps. The end must be later than the start. Submitted text is trimmed. A failed save keeps the dialog and draft open; the displayed event changes only after the server confirms the request.
 

@@ -24,7 +24,7 @@ Checked against the Winc Academy React Events App Project page on 18 October 202
 
 The course allows a custom theme and data examples. The project retains the original required schema with 12 researched Eindhoven event listings, plus optional source and image-credit metadata. The original course data is included unchanged for reference. See SOURCES.md for date evidence and ASSETS.md for imagery.
 
-The optional light/dark feature is implemented, including a device mode. Search controls are not a submission form, so they remain optional. Category selection requires one or more choices; requiring every checkbox would incorrectly force every category to be selected.
+The optional light/dark feature is implemented with two explicit choices. Search controls are not a submission form, so they remain optional. Category selection requires one or more choices; requiring every checkbox would incorrectly force every category to be selected.
 
 An event picture is required and can be supplied by URL or from the computer. Only the active source is required. A valid existing uploaded picture satisfies the requirement during editing, so choosing a replacement is optional. Prepared image data is persisted in the same backend `image` field.
 
