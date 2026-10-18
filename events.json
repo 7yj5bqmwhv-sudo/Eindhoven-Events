@@ -1,0 +1,384 @@
+{
+  "users": [
+    {
+      "id": 101,
+      "name": "Dutch Design Foundation / Designlink",
+      "image": "https://raw.githubusercontent.com/7yj5bqmwhv-sudo/Eindhoven-Events/main/public/images/events/ddw-2026-poster.png"
+    },
+    {
+      "id": 102,
+      "name": "Wildebras / Parktheater Eindhoven",
+      "image": "https://img.parktheater.nl/YaelNU5cnNQJEg7q9WdX3aGKdfR5G2noXWUqSfNQqq4/c%3A1024%3A1024/s%3A900%3A900%3A1/format%3Apng/aHR0cHM6Ly93d3cucGFya3RoZWF0ZXIubmwvL2Ntc19maWxlcy9zeXN0ZW0vaW1hZ2VzL2ltZzYxMzEyX29yaWcucG5n"
+    },
+    {
+      "id": 103,
+      "name": "De Toneelmakerij & DOX",
+      "image": "https://img.parktheater.nl/wCuggQsd5-7WTGi3XG-lghobxTC0u5udrQxzQq7HqYQ/c%3A2704%3A2704/s%3A900%3A900%3A1/aHR0cHM6Ly93d3cucGFya3RoZWF0ZXIubmwvL2Ntc19maWxlcy9zeXN0ZW0vaW1hZ2VzL2ltZzYxOTQwX29yaWcuanBn"
+    },
+    {
+      "id": 104,
+      "name": "Effenaar / K-POP Night",
+      "image": "https://d12y285rxlbnxt.cloudfront.net/2026-06/%20%E2%80%93%201920x1080%20Websitehallo.png"
+    },
+    {
+      "id": 105,
+      "name": "Stichting GLOW Eindhoven",
+      "image": "https://gloweindhoven.nl/assets/uploads/BvOF-GLOW2025_28-First-GLOW-Maincourse-06-lr.jpg"
+    },
+    {
+      "id": 106,
+      "name": "Effenaar / VroegZat",
+      "image": "https://d12y285rxlbnxt.cloudfront.net/2026-06/%20%E2%80%93%201920x1080%20Websitevreogzat.png"
+    },
+    {
+      "id": 107,
+      "name": "Effenaar / PIÑA",
+      "image": "https://d12y285rxlbnxt.cloudfront.net/2026-09/%20%E2%80%93%201920x1080%20Website%20pina%20nov.png"
+    },
+    {
+      "id": 108,
+      "name": "Hippe Gasten / Parktheater Eindhoven",
+      "image": "https://img.parktheater.nl/AdzsBOJqzCal7V1Ou8bIcEB6Lv5rxYicP8JhpnrefHs/c%3A2000%3A2000%3Afp%3A0.5%3A0.33/s%3A900%3A900%3A1/aHR0cHM6Ly93d3cucGFya3RoZWF0ZXIubmwvL2Ntc19maWxlcy9zeXN0ZW0vaW1hZ2VzL2ltZzYxMjkwX29yaWcuanBn"
+    },
+    {
+      "id": 109,
+      "name": "155 & Maas theater en dans",
+      "image": "https://img.parktheater.nl/g9zx7KYGJG5roIY706i0MLEshLJ6KoQhVt4x42SatpY/c%3A4912%3A4913%3Anowe%3A0%3A1503/s%3A900%3A900%3A1/aHR0cHM6Ly93d3cucGFya3RoZWF0ZXIubmwvL2Ntc19maWxlcy9zeXN0ZW0vaW1hZ2VzL2ltZzYxNjUxX29yaWcuanBn"
+    },
+    {
+      "id": 110,
+      "name": "Holland Expat Center South & TIEC",
+      "image": "https://wintermarketeindhoven.nl/wp-content/uploads/elementor/thumbs/Meaningful-gifts-with-personal-touch-final-scaled-roo8bfdrza2r64xb2x0v17m17spez2gmm4i46r69tc.jpg"
+    },
+    {
+      "id": 111,
+      "name": "Gerrie Smits / Parktheater Eindhoven",
+      "image": "https://img.parktheater.nl/LCeXB7F4KNGsiPP7OIRnp3JzRIIs-kIF42weU7P5tOw/c%3A1280%3A1280/s%3A900%3A900%3A1/aHR0cHM6Ly93d3cucGFya3RoZWF0ZXIubmwvL2Ntc19maWxlcy9zeXN0ZW0vaW1hZ2VzL2ltZzYxOTI1X29yaWcuanBn"
+    },
+    {
+      "id": 112,
+      "name": "Effenaar",
+      "image": "https://d12y285rxlbnxt.cloudfront.net/styles/1400w/s3/2026-09/Effenaar%20O%26N%20%E2%80%93%20Website%20Header.jpg?itok=zzLmjhAo"
+    }
+  ],
+  "events": [
+    {
+      "id": 101,
+      "createdBy": 101,
+      "title": "Dutch Design Week: Design meets Industry",
+      "description": "Discover how Dutch designers and companies turn ideas into practical products. The Industrial Design HUB presents collaborative projects exploring materials, manufacturing and everyday use, within Dutch Design Week's programme at the Klokgebouw.",
+      "image": "https://raw.githubusercontent.com/7yj5bqmwhv-sudo/Eindhoven-Events/main/public/images/events/ddw-2026-poster.png",
+      "categoryIds": [
+        2,
+        1
+      ],
+      "location": "Industrial Design HUB, Klokgebouw 50, 5617 AB Eindhoven",
+      "startTime": "2026-10-17T11:00:00+02:00",
+      "endTime": "2026-10-25T18:00:00+01:00",
+      "sourceUrl": "https://ddw.nl/en/programme/design-meets-industry",
+      "sourceName": "Dutch Design Week",
+      "sourceCheckedAt": "2026-10-18",
+      "imageAlt": "Dutch Design Week poster with red lettering and pink and yellow columns, announcing 17–25 October in Eindhoven",
+      "imageFit": "contain",
+      "imageCredit": "Dutch Design Week promotional artwork; designer not identified in the supplied image",
+      "imageSourceUrl": null,
+      "imageCaption": "Dutch Design Week, 17–25 October, Eindhoven. Poster supplied by the project owner.",
+      "scheduleNote": "17–25 October, daily 11:00–18:00. Already open when this guide was researched.",
+      "admissionNote": "DDW ticket required."
+    },
+    {
+      "id": 102,
+      "createdBy": 102,
+      "title": "Overleven In De Jungle",
+      "description": "Join Wildebras for an interactive jungle adventure filled with animal sounds, quizzes and playful challenges. Children help the presenter navigate the wild, with plenty of chances to laugh, shout and take part together at Parktheater.",
+      "image": "https://img.parktheater.nl/YaelNU5cnNQJEg7q9WdX3aGKdfR5G2noXWUqSfNQqq4/c%3A1024%3A1024/s%3A900%3A900%3A1/format%3Apng/aHR0cHM6Ly93d3cucGFya3RoZWF0ZXIubmwvL2Ntc19maWxlcy9zeXN0ZW0vaW1hZ2VzL2ltZzYxMzEyX29yaWcucG5n",
+      "categoryIds": [
+        5,
+        4
+      ],
+      "location": "Parktheater Eindhoven, Philipszaal, Elzentlaan 50, 5615 CN Eindhoven",
+      "startTime": "2026-10-22T19:00:00+02:00",
+      "endTime": "2026-10-22T20:00:00+02:00",
+      "sourceUrl": "https://www.parktheater.nl/programma/overleven-in-de-jungle-j5h2",
+      "sourceName": "Parktheater Eindhoven",
+      "sourceCheckedAt": "2026-10-18",
+      "imageAlt": "Overleven In De Jungle official promotional image",
+      "imageFit": "cover",
+      "imageCredit": "Wildebras / Parktheater Eindhoven promotional image; photographer not listed",
+      "imageSourceUrl": "https://www.parktheater.nl/programma/overleven-in-de-jungle-j5h2",
+      "imageCaption": "Image: Wildebras / Parktheater Eindhoven promotional image; photographer not listed.",
+      "scheduleNote": "",
+      "admissionNote": "Recommended age 6+. See the theatre listing for language and ticket information."
+    },
+    {
+      "id": 103,
+      "createdBy": 103,
+      "title": "Alice in Wonderland",
+      "description": "Alice tumbles into an unpredictable world in this energetic family production from De Toneelmakerij and DOX. Dance, music and theatrical magic accompany her search for her own unique voice during a surreal journey through Wonderland.",
+      "image": "https://img.parktheater.nl/wCuggQsd5-7WTGi3XG-lghobxTC0u5udrQxzQq7HqYQ/c%3A2704%3A2704/s%3A900%3A900%3A1/aHR0cHM6Ly93d3cucGFya3RoZWF0ZXIubmwvL2Ntc19maWxlcy9zeXN0ZW0vaW1hZ2VzL2ltZzYxOTQwX29yaWcuanBn",
+      "categoryIds": [
+        5,
+        4
+      ],
+      "location": "Parktheater Eindhoven, Hertog Jan Zaal, Elzentlaan 50, 5615 CN Eindhoven",
+      "startTime": "2026-10-23T19:00:00+02:00",
+      "endTime": "2026-10-23T20:15:00+02:00",
+      "sourceUrl": "https://www.parktheater.nl/programma/alice-in-wonderland-fphp",
+      "sourceName": "Parktheater Eindhoven",
+      "sourceCheckedAt": "2026-10-18",
+      "imageAlt": "Alice in Wonderland official promotional image",
+      "imageFit": "cover",
+      "imageCredit": "Jan Hoek in collaboration with ITA / De Toneelmakerij & DOX, via Parktheater Eindhoven",
+      "imageSourceUrl": "https://www.parktheater.nl/programma/alice-in-wonderland-fphp",
+      "imageCaption": "Image: Jan Hoek in collaboration with ITA / De Toneelmakerij & DOX, via Parktheater Eindhoven.",
+      "scheduleNote": "",
+      "admissionNote": "Recommended age 8+. See the theatre listing for language and ticket information."
+    },
+    {
+      "id": 104,
+      "createdBy": 104,
+      "title": "K-POP Night: Halloween edition",
+      "description": "A Halloween edition of Effenaar's K-pop dance night, with Random Play Dance, a mini market, K-Motion performing and a themed photo booth. Costumes are welcome. Ages 16 and over; bring valid ID.",
+      "image": "https://d12y285rxlbnxt.cloudfront.net/2026-06/%20%E2%80%93%201920x1080%20Websitehallo.png",
+      "categoryIds": [
+        3,
+        6
+      ],
+      "location": "Effenaar, Kleine Zaal, Dommelstraat 2, 5611 CK Eindhoven",
+      "startTime": "2026-10-30T20:00:00+01:00",
+      "endTime": "2026-10-31T01:00:00+01:00",
+      "sourceUrl": "https://www.effenaar.nl/agenda/k-pop-night-halloween",
+      "sourceName": "Effenaar",
+      "sourceCheckedAt": "2026-10-18",
+      "imageAlt": "K-POP Night: Halloween edition official promotional image",
+      "imageFit": "contain",
+      "imageCredit": "Promotional artwork via Effenaar / K-POP Night",
+      "imageSourceUrl": "https://www.effenaar.nl/agenda/k-pop-night-halloween",
+      "imageCaption": "Image: Promotional artwork via Effenaar / K-POP Night.",
+      "scheduleNote": "Official published times: 20:00–01:00. Finishes the next day.",
+      "admissionNote": "Ages 16 and over. Check the official event page for tickets and entry conditions."
+    },
+    {
+      "id": 105,
+      "createdBy": 105,
+      "title": "GLOW Eindhoven: CONNECT",
+      "description": "Walk through Eindhoven after dark as artists transform the city with light. This year's CONNECT theme brings installations and encounters along a city-centre route, inviting visitors to explore familiar streets from a different perspective.",
+      "image": "https://gloweindhoven.nl/assets/uploads/BvOF-GLOW2025_28-First-GLOW-Maincourse-06-lr.jpg",
+      "categoryIds": [
+        1,
+        8
+      ],
+      "location": "Walking route through Eindhoven city centre; join anywhere along the route",
+      "startTime": "2026-11-07T18:30:00+01:00",
+      "endTime": "2026-11-14T23:00:00+01:00",
+      "sourceUrl": "https://gloweindhoven.nl/en/practical/",
+      "sourceName": "GLOW Eindhoven",
+      "sourceCheckedAt": "2026-10-18",
+      "imageAlt": "Crowds watching colourful projections on Eindhoven City Hall during GLOW 2025",
+      "imageFit": "cover",
+      "imageCredit": "Bart van Overbeeke / GLOW Eindhoven",
+      "imageSourceUrl": "https://gloweindhoven.nl/en/press-information-2/",
+      "imageCaption": "The First GLOW by Maincourse, GLOW 2025. Photo: Bart van Overbeeke.",
+      "scheduleNote": "Every evening, 7–14 November, 18:30–23:00.",
+      "admissionNote": "Free city-centre route. The separate Philips Stadion drone experience requires a ticket.",
+      "featured": true
+    },
+    {
+      "id": 106,
+      "createdBy": 106,
+      "title": "VroegZat",
+      "description": "An early-start club night with familiar pop, rock, disco and hip-hop hits. Dance through the evening and head home at midnight. Ages 18 and over.",
+      "image": "https://d12y285rxlbnxt.cloudfront.net/2026-06/%20%E2%80%93%201920x1080%20Websitevreogzat.png",
+      "categoryIds": [
+        3,
+        6
+      ],
+      "location": "Effenaar, Grote Zaal, Dommelstraat 2, 5611 CK Eindhoven",
+      "startTime": "2026-11-13T19:30:00+01:00",
+      "endTime": "2026-11-14T00:00:00+01:00",
+      "sourceUrl": "https://www.effenaar.nl/agenda/vroegzat-13nov",
+      "sourceName": "Effenaar",
+      "sourceCheckedAt": "2026-10-18",
+      "imageAlt": "VroegZat official promotional image",
+      "imageFit": "contain",
+      "imageCredit": "Promotional artwork via Effenaar / VroegZat",
+      "imageSourceUrl": "https://www.effenaar.nl/agenda/vroegzat-13nov",
+      "imageCaption": "Image: Promotional artwork via Effenaar / VroegZat.",
+      "scheduleNote": "Official published times: 19:30–00:00. Finishes at midnight.",
+      "admissionNote": "Ages 18 and over. Check the official event page for tickets and entry conditions."
+    },
+    {
+      "id": 107,
+      "createdBy": 107,
+      "title": "PIÑA",
+      "description": "A Latin club night spanning reggaeton, merengue, bachata, dembow, salsa and dancehall. This XL edition adds a second area for salsa, bachata and kizomba. Ages 18 and over.",
+      "image": "https://d12y285rxlbnxt.cloudfront.net/2026-09/%20%E2%80%93%201920x1080%20Website%20pina%20nov.png",
+      "categoryIds": [
+        3,
+        6
+      ],
+      "location": "Effenaar, multiple rooms, Dommelstraat 2, 5611 CK Eindhoven",
+      "startTime": "2026-11-14T21:00:00+01:00",
+      "endTime": "2026-11-15T02:00:00+01:00",
+      "sourceUrl": "https://www.effenaar.nl/agenda/pina-14nov",
+      "sourceName": "Effenaar",
+      "sourceCheckedAt": "2026-10-18",
+      "imageAlt": "PIÑA official promotional image",
+      "imageFit": "contain",
+      "imageCredit": "Promotional artwork via Effenaar / PIÑA",
+      "imageSourceUrl": "https://www.effenaar.nl/agenda/pina-14nov",
+      "imageCaption": "Image: Promotional artwork via Effenaar / PIÑA.",
+      "scheduleNote": "Official published times: 21:00–02:00. Finishes the next day.",
+      "admissionNote": "Ages 18 and over. Check the official event page for tickets and entry conditions."
+    },
+    {
+      "id": 108,
+      "createdBy": 108,
+      "title": "Fan van Sinterklaas",
+      "description": "Hippe Gasten give familiar Sinterklaas songs a lively rock treatment alongside their own original rock music. This family concert invites children and grownups to join the fun, with a visit from Sinterklaas after the show.",
+      "image": "https://img.parktheater.nl/AdzsBOJqzCal7V1Ou8bIcEB6Lv5rxYicP8JhpnrefHs/c%3A2000%3A2000%3Afp%3A0.5%3A0.33/s%3A900%3A900%3A1/aHR0cHM6Ly93d3cucGFya3RoZWF0ZXIubmwvL2Ntc19maWxlcy9zeXN0ZW0vaW1hZ2VzL2ltZzYxMjkwX29yaWcuanBn",
+      "categoryIds": [
+        5,
+        3
+      ],
+      "location": "Parktheater Eindhoven, Philipszaal, Elzentlaan 50, 5615 CN Eindhoven",
+      "startTime": "2026-11-15T14:00:00+01:00",
+      "endTime": "2026-11-15T15:00:00+01:00",
+      "sourceUrl": "https://www.parktheater.nl/programma/fan-van-sinterklaas-dhqw",
+      "sourceName": "Parktheater Eindhoven",
+      "sourceCheckedAt": "2026-10-18",
+      "imageAlt": "Fan van Sinterklaas official promotional image",
+      "imageFit": "cover",
+      "imageCredit": "Hippe Gasten / Parktheater Eindhoven promotional image; photographer not listed",
+      "imageSourceUrl": "https://www.parktheater.nl/programma/fan-van-sinterklaas-dhqw",
+      "imageCaption": "Image: Hippe Gasten / Parktheater Eindhoven promotional image; photographer not listed.",
+      "scheduleNote": "",
+      "admissionNote": "Recommended age 4+. See the theatre listing for language and ticket information."
+    },
+    {
+      "id": 109,
+      "createdBy": 109,
+      "title": "Controle",
+      "description": "Breakdance collective 155 mixes physical comedy, live music, film and acrobatics in a performance about trying to control life. Moving floors and unexpected humour turn questions about adulthood and freedom into an energetic theatre experience.",
+      "image": "https://img.parktheater.nl/g9zx7KYGJG5roIY706i0MLEshLJ6KoQhVt4x42SatpY/c%3A4912%3A4913%3Anowe%3A0%3A1503/s%3A900%3A900%3A1/aHR0cHM6Ly93d3cucGFya3RoZWF0ZXIubmwvL2Ntc19maWxlcy9zeXN0ZW0vaW1hZ2VzL2ltZzYxNjUxX29yaWcuanBn",
+      "categoryIds": [
+        4
+      ],
+      "location": "Parktheater Eindhoven, Philipszaal, Elzentlaan 50, 5615 CN Eindhoven",
+      "startTime": "2026-12-02T20:30:00+01:00",
+      "endTime": "2026-12-02T21:30:00+01:00",
+      "sourceUrl": "https://www.parktheater.nl/programma/controle-54qs",
+      "sourceName": "Parktheater Eindhoven",
+      "sourceCheckedAt": "2026-10-18",
+      "imageAlt": "Controle official promotional image",
+      "imageFit": "cover",
+      "imageCredit": "Neeltje de Vries / 155 & Maas theater en dans, via Parktheater Eindhoven",
+      "imageSourceUrl": "https://www.parktheater.nl/programma/controle-54qs",
+      "imageCaption": "Image: Neeltje de Vries / 155 & Maas theater en dans, via Parktheater Eindhoven.",
+      "scheduleNote": ""
+    },
+    {
+      "id": 110,
+      "createdBy": 110,
+      "title": "Winter Market Eindhoven",
+      "description": "Meet local makers and cultural communities inside Muziekgebouw. Browse handmade gifts, taste food from different traditions and discover music, dance and creative activities at this free winter gathering for families, neighbours and newcomers.",
+      "image": "https://wintermarketeindhoven.nl/wp-content/uploads/elementor/thumbs/Meaningful-gifts-with-personal-touch-final-scaled-roo8bfdrza2r64xb2x0v17m17spez2gmm4i46r69tc.jpg",
+      "categoryIds": [
+        7
+      ],
+      "location": "Muziekgebouw Eindhoven, Heuvel 140, 5611 DK Eindhoven",
+      "startTime": "2026-12-12T11:00:00+01:00",
+      "endTime": "2026-12-12T16:00:00+01:00",
+      "sourceUrl": "https://wintermarketeindhoven.nl/",
+      "sourceName": "Winter Market Eindhoven",
+      "sourceCheckedAt": "2026-10-18",
+      "imageAlt": "Visitors browsing handmade jewellery at Winter Market Eindhoven",
+      "imageFit": "cover",
+      "imageCredit": "Winter Market Eindhoven",
+      "imageSourceUrl": "https://wintermarketeindhoven.nl/",
+      "imageCaption": "Promotional photograph from the organiser's website; photographer not identified on the page.",
+      "scheduleNote": "Saturday 12 December, 11:00–16:00.",
+      "admissionNote": "Free entry."
+    },
+    {
+      "id": 111,
+      "createdBy": 111,
+      "title": "Oudejaarsconference 2026: KLEM",
+      "description": "Gerrie Smits looks back on 2026 with sharp jokes and absurd observations about feeling stuck. His year-end comedy explores the gap between ordinary daily routines, world news and the courage to make a different move.",
+      "image": "https://img.parktheater.nl/LCeXB7F4KNGsiPP7OIRnp3JzRIIs-kIF42weU7P5tOw/c%3A1280%3A1280/s%3A900%3A900%3A1/aHR0cHM6Ly93d3cucGFya3RoZWF0ZXIubmwvL2Ntc19maWxlcy9zeXN0ZW0vaW1hZ2VzL2ltZzYxOTI1X29yaWcuanBn",
+      "categoryIds": [
+        4
+      ],
+      "location": "Parktheater Eindhoven, Philipszaal, Elzentlaan 50, 5615 CN Eindhoven",
+      "startTime": "2026-12-20T20:30:00+01:00",
+      "endTime": "2026-12-20T22:00:00+01:00",
+      "sourceUrl": "https://www.parktheater.nl/programma/oudejaarsconference-2026-klem-tkrd",
+      "sourceName": "Parktheater Eindhoven",
+      "sourceCheckedAt": "2026-10-18",
+      "imageAlt": "Oudejaarsconference 2026: KLEM official promotional image",
+      "imageFit": "cover",
+      "imageCredit": "Gerrie Smits / Parktheater Eindhoven promotional image; photographer not listed",
+      "imageSourceUrl": "https://www.parktheater.nl/programma/oudejaarsconference-2026-klem-tkrd",
+      "imageCaption": "Image: Gerrie Smits / Parktheater Eindhoven promotional image; photographer not listed.",
+      "scheduleNote": ""
+    },
+    {
+      "id": 112,
+      "createdBy": 112,
+      "title": "Effenaar Oud & Nieuw 2026",
+      "description": "Celebrate New Year's Eve across Effenaar's rooms, with pop hits, alternative music, house and disco. The programme includes a midnight countdown, a silent disco, oliebollen and a games area.",
+      "image": "https://d12y285rxlbnxt.cloudfront.net/styles/1400w/s3/2026-09/Effenaar%20O%26N%20%E2%80%93%20Website%20Header.jpg?itok=zzLmjhAo",
+      "categoryIds": [
+        3,
+        6
+      ],
+      "location": "Effenaar, multiple rooms, Dommelstraat 2, 5611 CK Eindhoven",
+      "startTime": "2026-12-31T22:00:00+01:00",
+      "endTime": "2027-01-01T05:00:00+01:00",
+      "sourceUrl": "https://www.effenaar.nl/agenda/effenaar-oud-nieuw-2026",
+      "sourceName": "Effenaar",
+      "sourceCheckedAt": "2026-10-18",
+      "imageAlt": "Effenaar Oud & Nieuw 2026 official promotional image",
+      "imageFit": "contain",
+      "imageCredit": "Promotional artwork via Effenaar",
+      "imageSourceUrl": "https://www.effenaar.nl/agenda/effenaar-oud-nieuw-2026",
+      "imageCaption": "Image: Promotional artwork via Effenaar.",
+      "scheduleNote": "Official published times: 22:00–05:00. Starts on 31 December 2026 and ends on 1 January 2027.",
+      "admissionNote": "A New Year’s Eve event beginning on 31 December and continuing into 1 January. Check the official listing for entry conditions."
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Art & culture"
+    },
+    {
+      "id": 2,
+      "name": "Design"
+    },
+    {
+      "id": 3,
+      "name": "Music"
+    },
+    {
+      "id": 4,
+      "name": "Theatre & dance"
+    },
+    {
+      "id": 5,
+      "name": "Family"
+    },
+    {
+      "id": 6,
+      "name": "Nightlife"
+    },
+    {
+      "id": 7,
+      "name": "Markets"
+    },
+    {
+      "id": 8,
+      "name": "Outdoors"
+    }
+  ]
+}
